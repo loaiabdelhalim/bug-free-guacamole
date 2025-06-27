@@ -1,0 +1,17 @@
+.has-dotted-line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 1.25rem;
+    right: 1.25rem;
+    height: 2px;
+    transform: translateY(-50%);
+    background-image: repeating-linear-gradient(
+            to right,
+            #e5e7eb,
+            #e5e7eb 6px,
+            transparent 6px,
+            transparent 10px
+    );
+    z-index: 1;
+}
